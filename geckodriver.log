@@ -1,0 +1,146 @@
+1485750009588	geckodriver	INFO	Listening on 127.0.0.1:50796
+1485750009597	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.rA12jhYVCxtc
+1485750009598	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485750009630	geckodriver::marionette	INFO	Connecting to Marionette on localhost:50803
+1485750010260	Marionette	INFO	Listening on port 50803
+JavaScript error: http://acu-web.com/, line 713: ReferenceError: WOW is not defined
+JavaScript error: http://acu-web.com/mailform/mailform.js, line 236: TypeError: mfObj is undefined
+[Child 17216] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 17216] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1485750055074	geckodriver	INFO	Listening on 127.0.0.1:50844
+1485750056050	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.FRnbaJ9GFgeT
+1485750056051	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485750056054	geckodriver::marionette	INFO	Connecting to Marionette on localhost:50853
+1485750056662	Marionette	INFO	Listening on port 50853
+JavaScript error: http://acu-web.com/, line 713: ReferenceError: WOW is not defined
+JavaScript error: http://acu-web.com/mailform/mailform.js, line 236: TypeError: mfObj is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 17305] WARNING: pipe error: Broken pipe: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 687
+[Child 17305] WARNING: pipe error: Broken pipe: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 687
+[Child 17305] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 17305] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1485750159743	geckodriver	INFO	Listening on 127.0.0.1:51003
+1485750159757	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.8UrDCpLGjmrQ
+1485750159759	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485750159761	geckodriver::marionette	INFO	Connecting to Marionette on localhost:51010
+1485750160333	Marionette	INFO	Listening on port 51010
+JavaScript error: http://acu-web.com/, line 713: ReferenceError: WOW is not defined
+JavaScript error: http://acu-web.com/mailform/mailform.js, line 236: TypeError: mfObj is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 17419] WARNING: pipe error: Broken pipe: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 687
+[Child 17419] WARNING: pipe error: Broken pipe: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 687
+[Child 17419] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 17419] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1485750259283	geckodriver	INFO	Listening on 127.0.0.1:51178
+1485750260291	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.GS3JGeglfmsx
+1485750260293	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485750260297	geckodriver::marionette	INFO	Connecting to Marionette on localhost:51187
+1485750260858	Marionette	INFO	Listening on port 51187
+JavaScript error: http://acu-web.com/, line 713: ReferenceError: WOW is not defined
+JavaScript error: http://acu-web.com/mailform/mailform.js, line 236: TypeError: mfObj is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 17558] WARNING: pipe error: Broken pipe: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 687
+[Child 17558] WARNING: pipe error: Broken pipe: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 687
+[Child 17558] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 17558] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1485750298084	geckodriver	INFO	Listening on 127.0.0.1:51235
+1485750299072	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.6WvrT7zEYGnk
+1485750299073	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485750299077	geckodriver::marionette	INFO	Connecting to Marionette on localhost:51244
+1485750299709	Marionette	INFO	Listening on port 51244
+JavaScript error: http://acu-web.com/, line 713: ReferenceError: WOW is not defined
+JavaScript error: http://acu-web.com/mailform/mailform.js, line 236: TypeError: mfObj is undefined
+[Child 17640] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 17640] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1485750470761	geckodriver	INFO	Listening on 127.0.0.1:51525
+1485750470770	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.YJ864jc3HOSB
+1485750470771	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485750470774	geckodriver::marionette	INFO	Connecting to Marionette on localhost:51532
+1485750471334	Marionette	INFO	Listening on port 51532
+JavaScript error: http://acu-web.com/, line 713: ReferenceError: WOW is not defined
+JavaScript error: http://acu-web.com/mailform/mailform.js, line 236: TypeError: mfObj is undefined
+[Child 17799] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 17799] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1485750518230	geckodriver	INFO	Listening on 127.0.0.1:51569
+1485750519224	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.lZMbEk7AFvTv
+1485750519225	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485750519228	geckodriver::marionette	INFO	Connecting to Marionette on localhost:51579
+1485750519842	Marionette	INFO	Listening on port 51579
+JavaScript error: http://acu-web.com/, line 713: ReferenceError: WOW is not defined
+JavaScript error: http://acu-web.com/mailform/mailform.js, line 236: TypeError: mfObj is undefined
+[Child 17896] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 17896] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1485750549432	geckodriver	INFO	Listening on 127.0.0.1:51618
+1485750550402	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.jy87AJn1Ilev
+1485750550403	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485750550408	geckodriver::marionette	INFO	Connecting to Marionette on localhost:51627
+1485750551347	Marionette	INFO	Listening on port 51627
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 17974] WARNING: pipe error: Broken pipe: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 687
+[Child 17974] WARNING: pipe error: Broken pipe: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 687
+[Child 17974] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 17974] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1485750581386	geckodriver	INFO	Listening on 127.0.0.1:51675
+1485750581393	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.ly0hPXyfffEV
+1485750581394	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485750581397	geckodriver::marionette	INFO	Connecting to Marionette on localhost:51682
+1485750582005	Marionette	INFO	Listening on port 51682
+1485750602934	geckodriver	INFO	Listening on 127.0.0.1:51709
+1485750603943	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.wyid3qqNdjCz
+1485750603944	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485750603948	geckodriver::marionette	INFO	Connecting to Marionette on localhost:51718
+1485750604534	Marionette	INFO	Listening on port 51718
+JavaScript error: http://acu-web.com/, line 713: ReferenceError: WOW is not defined
+JavaScript error: http://acu-web.com/mailform/mailform.js, line 236: TypeError: mfObj is undefined
+[Child 18105] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 18105] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1485751073285	geckodriver	INFO	Listening on 127.0.0.1:52198
+1485751074296	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.aBeiw6aGPlCh
+1485751074297	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485751074300	geckodriver::marionette	INFO	Connecting to Marionette on localhost:52207
+1485751074860	Marionette	INFO	Listening on port 52207
+JavaScript error: http://acu-web.com/, line 713: ReferenceError: WOW is not defined
+JavaScript error: http://acu-web.com/mailform/mailform.js, line 236: TypeError: mfObj is undefined
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+[Child 18455] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 18455] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1485751244210	geckodriver	INFO	Listening on 127.0.0.1:52453
+1485751245200	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.TdD4Hj7hN9rd
+1485751245202	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485751245204	geckodriver::marionette	INFO	Connecting to Marionette on localhost:52462
+1485751245805	Marionette	INFO	Listening on port 52462
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1485751363379	geckodriver	INFO	Listening on 127.0.0.1:52564
+1485751364392	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.Atay6bod69ZJ
+1485751364394	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485751364398	geckodriver::marionette	INFO	Connecting to Marionette on localhost:52573
+1485751365045	Marionette	INFO	Listening on port 52573
+JavaScript error: http://acu-web.com/, line 713: ReferenceError: WOW is not defined
+JavaScript error: http://acu-web.com/mailform/mailform.js, line 236: TypeError: mfObj is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 18795] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 18795] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1485751461472	geckodriver	INFO	Listening on 127.0.0.1:52629
+1485751462464	mozprofile::profile	INFO	Using profile path /var/folders/vg/703km1c16kv4kvk5vdwxf2l80000gp/T/rust_mozprofile.fJqx9TPKk2lK
+1485751462465	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1485751462467	geckodriver::marionette	INFO	Connecting to Marionette on localhost:52638
+1485751463069	Marionette	INFO	Listening on port 52638
+JavaScript error: http://acu-web.com/, line 713: ReferenceError: WOW is not defined
+JavaScript error: http://acu-web.com/mailform/mailform.js, line 236: TypeError: mfObj is undefined
+[Child 18929] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 18929] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+console.error: 
+  Protocol error (noSuchActor): No such actor for ID: server1.conn0.child1/highlighter31
