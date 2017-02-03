@@ -14,10 +14,13 @@ MIN_DIR = "/Users/kawamataryou/PycharmProjects/cap/op-images"
 # 縮小率
 ratio = 0.3
 
-# 縮小
+# 縮小切り抜き
 for infile in glob.glob(os.path.join(FROM_DIR, "*.png")):
     im = Image.open(infile)
-    im.thumbnail((500,500), Image.ANTIALIAS)
+    im.crop((0, 0, 590, 335))
+    im.thumbnail((600,600), Image.ANTIALIAS)
+    #スクロールバーの切り抜き
+    im = im.crop((0, 0, 590, 335))
     im.save(os.path.join(TO_DIR, os.path.basename(infile)))
 
 # 無劣化圧縮
