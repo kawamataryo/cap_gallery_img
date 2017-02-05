@@ -3,6 +3,8 @@ from PIL import Image
 import glob
 import os
 import tinify
+
+# キーの設定
 tinify.key = "tuH_YrjVJrB1Qz7EoCdSTsT3LsBboska"
 
 # 縮小前の画像があるdir
@@ -11,8 +13,7 @@ FROM_DIR = "/Users/kawamataryou/PycharmProjects/cap/images"
 TO_DIR = "/Users/kawamataryou/PycharmProjects/cap/min-images"
 # 圧縮後の画像を置くdir
 MIN_DIR = "/Users/kawamataryou/PycharmProjects/cap/op-images"
-# 縮小率
-ratio = 0.3
+
 
 # 縮小切り抜き
 for infile in glob.glob(os.path.join(FROM_DIR, "*.png")):
