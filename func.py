@@ -9,15 +9,16 @@ import urllib.request
 
 def image_name(url) :
     # URLのドメイン抽出パターン作成
-    pat = r"http://(www.)?([\w-]+).[\w.]"
+    pat = r"https?://(www.)?([\w-]+).[\w.]"
     # 正規表現でマッチして抽出
-    name = re.search(pat, url).group(2)
+    find_list = re.findall(pat, url)
+    name = find_list[0][1]
     # png形式にして名前を返す
     return name + ".png"
 
 # -------------------------------------------------
 # キャプチャの作成
-# -------------------------------------------------
+# ----------------------------------s---------------
 def cap(browser, url, file) :
     # URLを開く
     browser.get(url)

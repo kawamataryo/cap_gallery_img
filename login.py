@@ -1,8 +1,9 @@
 from selenium import webdriver
 import os
-import time
+import glob
 
 #変数設定
+IMAGE_DIR = "/Users/kawamataryou/PycharmProjects/cap/op-images"
 LOGIN_URL = "http://localhost:8888/clinic/web/wp/wp-login.php"
 ID = "ba068082@gmail.com"
 PASS = "G#pt(FAnY%@iEG$aog"
@@ -52,16 +53,19 @@ form.submit()
 # メディアをアップロード
 # ----------------------------------------------------
 
-# メディアを追加にアクセス
-driver.get(IMAGE_URL)
+# フォルダ全てをアップロード
+for image_pass in glob.glob(os.path.join(IMAGE_DIR, "*.png")):
 
-# メディアを選択
-up_image = driver.find_element_by_id("async-upload")
-up_image.send_keys(os.getcwd()+"/op-images/heishindou.png")
+    # メディアを追加にアクセス
+    driver.get(IMAGE_URL)
 
-# フィオームを送信
-form_btn = driver.find_element_by_id("html-upload")
-form_btn.click()
+    # メディアを選択
+    up_image = driver.find_element_by_id("async-upload")
+    up_image.send_keys(image_pass)
+
+    # フォームを送信
+    form_btn = driver.find_element_by_id("html-upload")
+    form_btn.click()s
 
 
 driver.quit()
