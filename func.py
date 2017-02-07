@@ -9,9 +9,9 @@ import urllib.request
 
 def image_name(url) :
     # URLのドメイン抽出パターン作成
-    pat = r"http://([\w-]+).[\w.]+"
+    pat = r"http://(www.)?([\w-]+).[\w.]"
     # 正規表現でマッチして抽出
-    name = re.search(pat, url).group(1)
+    name = re.search(pat, url).group(2)
     # png形式にして名前を返す
     return name + ".png"
 
@@ -39,3 +39,4 @@ def get_title(url):
     soup = BeautifulSoup(html, 'lxml')
     title = soup.title.string
     return title
+

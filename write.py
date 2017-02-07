@@ -8,7 +8,8 @@
 # 画像ファイル名整形関数のインストール
 from func import image_name, get_title
 
-#
+# 辞書の順番固定
+from collections import OrderedDict
 
 # 設定項目
 INIT_ROW = ['post_title','address','capture','url','post_type']
@@ -26,17 +27,16 @@ with open('list.txt',mode='r') as inp_f, open('upload.csv',mode='w') as out_f :
     # list.txtからurlを取得して一つづつ設定s
     for line in inp_f :
         #初期化
-        set_row = {
-            'title': '',
-            'address': '',
-            'capture': '',
-            'url': '',
-            'post_type' : ''
-        }
+
+        set_row = OrderedDict()
+
         url = line.strip()
 
         #タイトル行の追加
         set_row['title'] = get_title(url)
+
+        #所在地の設定
+        set_row['address'] = '入力待ち'
 
         #画像アドレスの追加
         img_name = image_name(url)
@@ -44,9 +44,6 @@ with open('list.txt',mode='r') as inp_f, open('upload.csv',mode='w') as out_f :
 
         #URL行の追加
         set_row['url'] = url
-
-        #所在地の設定
-        set_row['address'] = '入力待ち'
 
         #投稿タイプの設定
         set_row['post_type'] = POST_TYPE

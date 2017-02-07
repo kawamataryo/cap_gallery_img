@@ -1,4 +1,5 @@
 from selenium import webdriver
+from func import cap, image_name
 
 
 # URL取得(list.txt)のファイルより
