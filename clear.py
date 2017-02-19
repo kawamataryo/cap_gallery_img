@@ -23,5 +23,5 @@ for infile in glob.glob(os.path.join(MIN_DIR, "*.png")):
 list_f = open('list.txt', mode='w')
 list_f.write('')
 
-csv_f = open('upload.csv', mode='w')
+csv_f = open('up-list.csv', mode='w')
 csv_f.write('')

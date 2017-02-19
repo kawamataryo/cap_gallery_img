@@ -1,41 +1,91 @@
-# やりたいこと
-# list.txtのリストからcsv形式の投稿アップロード用ファイルを作成
-# 最初の指定行をカンマ区切りで印字（post_title とかとか）
-# list.txtを取得。一行づつ処理
-# できればスクレイピングでサイトタイトルを取得したい。
-
-
 # 画像ファイル名整形関数のインストール
 from func import image_name, get_title
+#プログレスバー表示
+from tqdm import tqdm
 
-# 辞書の順番固定
-from collections import OrderedDict
 
 # 設定項目
-INIT_ROW = ['post_title','address','capture','url','post_type','post_status']
+INIT_ROW = ['post_title','post_category','capture','url','post_type','post_status']
 # 画像のURL
-IM_ADRRESS = 'http://localhost:8888/clinic/web/app/uploads/2017/02/'
+IM_ADRRESS = 'http://clinic/wp-content/themes/sage-8.5/dist/images/'
 # 設定する投稿タイプ
 POST_TYPE = 'post'
 POST_STATUS = 'publish'
 
-with open('list.txt',mode='r') as inp_f, open('upload.csv',mode='w') as out_f :
+# -------------------------------------------------
+# カテゴリーの取得
+# -------------------------------------------------s
 
+def get_category(title) :
+    category = []
+    if '鍼灸' in title or '灸' in title or 'はり' in 'きゅう' in title:
+        category.append('shinkyu')
+    if '整骨' in title :
+        category.append('seikotsu')
+    if '整体' in title :
+        category.append('seitai')
+    if '訪問マッサージ' in title :
+        category.append('houmon_masa')
+    elif 'マッサージ' in title :
+        category.append('masa')
+    if 'リラクゼーション' in title :
+        category.append('rira')
+    if '介護' in title:
+        category.append('kaigo')
+    if '訪問看護' in title:
+        category.append('hou_kan')
+    if 'カイロプラクティック' in title :
+        category.append('kairo')
+    if 'アロマ' in title :
+        category.append('aroma')
+    if '接骨' in title :
+        category.append('sekkotsu')
+    if not category :
+        category.append('other')
+
+    conma = '"'
+    result = conma + ','.join(category) + conma
+    return result
+
+# -------------------------------------------------
+# タイトルの整形
+# -------------------------------------------------
+# seoでタイトルにキーワードを入れている場合に店名のみ取り出すために
+def form_title(title) :
+    if '|' in title :
+        title = title.split('|')
+        f_title = title[0].strip()
+        return f_title
+    elif '-' in title :
+        title = title.split('-')
+        f_title = title[0].strip()
+        return f_title
+    else :
+        return title
+
+# -------------------------------------------------
+# メイン
+# -------------------------------------------------
+
+with open('list.txt',mode='r') as inp_f, open('up-list.csv',mode='w') as out_f :
     # 設定行の書き込み
     out_f.write(",".join(INIT_ROW))
     out_f.write("\n")
 
-    # list.txtからurlを取得して一つづつ設定s
-    for line in inp_f :
+    # list.txtからurlを取得して一つづつ設定
+    for line in tqdm(inp_f) :
         #初期化
         set_row = []
         url = line.strip()
 
         #タイトル行の追加
-        set_row.append(get_title(url))
+        title = get_title(url)
+        f_title = form_title(title)
+        set_row.append(f_title)
 
-        #所在地の設定
-        set_row.append('入力待ち')
+        #カテゴリーの追加
+        category = get_category(title)
+        set_row.append(category)
 
         #画像アドレスの追加
         img_name = image_name(url)

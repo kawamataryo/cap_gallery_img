@@ -18,17 +18,16 @@ def image_name(url) :
 
 # -------------------------------------------------
 # キャプチャの作成
-# ----------------------------------s---------------
-def cap(browser, url, file) :
+# -------------------------------------------------
+def cap(browser, url, image_dir, file, wait) :
     # URLを開く
     browser.get(url)
-    # ウィンドウサイズとズームを設定
+    # ウィンドウサイズを設定
     browser.set_window_size(1250, 1036)
-    # browser.execute_script("document.body.style.zoom='90%'")
-    # 読み込み待機時間
-    time.sleep(4)
+    # 読み込み待機
+    time.sleep(wait)
     # スクリーンショット取得
-    browser.save_screenshot("./images/" + file)
+    browser.save_screenshot(image_dir + "/" + file)
 
 # -------------------------------------------------
 # urlからtitleの取得
