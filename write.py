@@ -2,6 +2,8 @@
 from func import image_name, get_title
 #プログレスバー表示
 from tqdm import tqdm
+import codecs
+
 
 
 # 設定項目
@@ -50,24 +52,17 @@ def get_category(title) :
 # -------------------------------------------------
 # タイトルの整形
 # -------------------------------------------------
-# seoでタイトルにキーワードを入れている場合に店名のみ取り出すために
+# seoでタイトルにキーワードを入れている場合に店名のみ取り出すために入力
 def form_title(title) :
-    if '|' in title :
-        title = title.split('|')
-        f_title = title[0].strip()
-        return f_title
-    elif '-' in title :
-        title = title.split('-')
-        f_title = title[0].strip()
-        return f_title
-    else :
-        return title
+    print("抽出タイトル：\n",title)
+    f_title = input("店名を入力してください:\n")
+    return f_title
 
 # -------------------------------------------------
 # メイン
 # -------------------------------------------------
 
-with open('list.txt',mode='r') as inp_f, open('up-list.csv',mode='w') as out_f :
+with codecs.open('list.txt',mode='r') as inp_f, codecs.open('up-list.csv',mode='w') as out_f :
     # 設定行の書き込み
     out_f.write(",".join(INIT_ROW))
     out_f.write("\n")

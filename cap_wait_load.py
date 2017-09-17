@@ -32,7 +32,7 @@ try:
         # ドメインの一部をファイル名として設定
         file = image_name(url)
         # キャプチャ保存
-        cap(driver, url,FROM_DIR, file, 10)
+        cap(driver, url,FROM_DIR, file, 5)
 
 finally:
     driver.quit()

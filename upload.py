@@ -3,17 +3,34 @@ import os
 import glob
 import shutil
 from tqdm import tqdm
+import configparser
 
-#変数設定
-IMAGE_INP = "/Users/kawamataryou/PycharmProjects/cap/min-images"
-LOGIN_URL = "http://clinic/wp-login.php"
-ID = "ryo"
-PASS = "OORBoWQ&^D9WV8nB"
-IMPORT_URL = "http://clinic/wp-admin/admin.php?import=csv"
-IMAGE_OUT = "/Users/kawamataryou/vagrant-clinic/wordpress/wp-content/themes/sage-8.5/dist/images"
+# ----------------------------------------------------
+# 変数
+# ----------------------------------------------------
+# 設定ファイルの読み込み
+conf = configparser.SafeConfigParser()
+conf.read('setting.config')
 
+# 縮小済み画像のパス
+IMAGE_INP = conf['CAPTURE']['min_img_pass']
+# WPログインURL
+LOGIN_URL = conf['UPLOAD']['login_url']
+# WPログインID
+ID = conf['UPLOAD']['login_id']
+# WPログインパス
+PASS = conf['UPLOAD']['login_pass']
+# インポート先パス
+IMPORT_URL = conf['UPLOAD']['import_url']
+# アップロード先画像パス
+IMAGE_OUT = conf['UPLOAD']['img_up_pass']
+
+
+# ----------------------------------------------------
+# メイン
+# ----------------------------------------------------
 # プラウザ起動
-driver = webdriver.Chrome()
+driver = webdriver.Chrome('/usr/local/bin/chromedriver')
 try:
 
     # ----------------------------------------------------
